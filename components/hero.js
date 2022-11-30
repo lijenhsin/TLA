@@ -11,9 +11,9 @@ export default function Hero() {
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               最新活動:2023 台灣喉科醫學會北區學術研討會
             </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+            <div className="p-5 py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               台灣喉科醫學會於2023/1/8(日)預計於基隆長庚醫院舉辦，主題為咽喉逆流的最新治療以及喉科臨床病例討論會。
-            </p>
+            </div>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
@@ -28,8 +28,8 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
-            <Image
+          <div className=" border-blue-200 border-10 p-3">
+            <Image 
               src={heroImg}
               width="800"
               height="532"
