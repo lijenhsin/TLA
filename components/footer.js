@@ -9,25 +9,30 @@ export default function Footer() {
   return (
     <div className="relative">
       <Container>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center border-t border-gray-200">
           <div className="text-xl text-center text-gray-700 dark:text-white">
             贊助 <span className="text-indigo-600">台灣喉科醫學會</span>{" "}
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <div className="p-3 shadow-lg text-gray-400 dark:text-gray-400">
               <a href="">
                 <Image src="/img/tty.jpg" height={100} width={300}></Image>
+              </a>
+            </div>
+            <div className="p-3 shadow-lg text-gray-400 dark:text-gray-400">
+              <a href="">
+                <Image src="/img/tt.jpg" height={100} width={300}></Image>
               </a>
             </div>
           </div>
         </div>
       </Container>
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+        <div className=" grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-200 dark:border-trueGray-700 ">
           <div className="">
-            <div>Follow us 追蹤我們</div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
+            <div className="text-center">Follow us 追蹤我們</div>
+            <div className=" flex justify-center mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
                 href="https://www.facebook.com/groups/738069780632980"
                 target="_blank"

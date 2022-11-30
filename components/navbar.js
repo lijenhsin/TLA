@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full shadow-lg">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
@@ -62,8 +62,8 @@ export default function Navbar() {
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
                     {navigation.map((item, index) => (
-                      <Link key={index} href={"/"+item.url}>
-                        <div className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                      <Link key={index} href={"/" + item.url}>
+                        <div className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md text-sm dark:text-gray-300 hover:text-indigo-500 hover:bg-sky-200 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
                           {item.title}
                         </div>
                       </Link>
@@ -85,8 +85,8 @@ export default function Navbar() {
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link href={"/"+menu.url}>
-                  <div className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+                <Link href={"/" + menu.url}>
+                  <div className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline  dark:text-gray-200 hover:text-sky-800 hover:bg-sky-200 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
                     {menu.title}
                   </div>
                 </Link>

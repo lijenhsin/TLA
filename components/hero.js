@@ -27,7 +27,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
+        <div className="flex items-center justify-center w-full lg:w-1/2 shadow-lg">
           <div className=" border-blue-200 border-10 p-3">
             <Image 
               src={heroImg}
