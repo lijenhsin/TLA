@@ -3,12 +3,13 @@ import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
+
   const navigation = [
     { title: "關於我們", url: "about" },
     { title: "最新消息", url: "news" },
     { title: "學會活動", url: "activity" },
     { title: "專家會員名單", url: "list" },
-    { title: "聯絡我們", url: "contact" },
+    { title: "衛教資訊", url: "contact" },
   ];
 
   return (
