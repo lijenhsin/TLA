@@ -20,11 +20,13 @@ export default function Footer() {
                 <Image src="/img/tty.jpg" height={100} width={300}></Image>
               </a>
             </div>
+            {/*
             <div className="p-3 shadow-lg text-gray-400 dark:text-gray-400">
               <a href="">
                 <Image src="/img/tt.jpg" height={100} width={300}></Image>
               </a>
             </div>
+            */}
           </div>
         </div>
       </Container>
