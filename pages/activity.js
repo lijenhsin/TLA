@@ -2,6 +2,8 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
+import Image from "next/image";
+import { Noto_Serif_TC } from "@next/font/google";
 
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
@@ -12,23 +14,17 @@ import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 
-//import dynamic from "next/dynamic";
+const MingTi = Noto_Serif_TC({
+  weight: "900",
+});
 
-// const Video = dynamic(() => import("../components/video"));
-
-// const Benefits = dynamic(() => import("../components/benefits"));
-// const Footer = dynamic(() => import("../components/footer"));
-// const Testimonials = dynamic(() => import("../components/testimonials"));
-// const Cta = dynamic(() => import("../components/cta"));
-// const Faq = dynamic(() => import("../components/faq"));
-
-// const PopupWidget = dynamic(() => import("../components/popupWidget"));
+const h1class =`${MingTi.className} text-2xl leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-4xl xl:leading-tight dark:text-white`
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>台灣喉科醫學會首頁：Welcome to Taiwan Laryngoloigcal Association</title>
+        <title>台灣喉科醫學會：Activities</title>
         <meta
           name="description"
           content="TLA intro page"
@@ -40,8 +36,38 @@ export default function Home() {
       
       <SectionTitle
         pretitle="Recent Activity"
-        title="學會活動">
-        北區喉科討論會
+        title="近期活動">
+        <h1 className={h1class}>成大醫院喉科新進展</h1>
+        <div>
+        <Image className="p-10"
+              src="https://lh6.googleusercontent.com/uacgAwUATy6FOVcHSBBNGDVUM7-1BWOJFu0w7F9tzxdthj4XIe4daC1uex8Rpo5Px0A=w2400"
+              width="800"
+              height="532"
+              alt="KCGMH"
+            
+              loading="eager"
+              
+            />
+
+<Image className="p-10"
+              src="https://lh6.googleusercontent.com/W_tVk0igWu1WIjnA9SXbM35mYte5ttVUX4N-tu_pd-1jTJ-K_x6DNGl9zuYa_Z6PZgY=w2400"
+              width="800"
+              height="532"
+              alt="KCGMH"
+            
+              loading="eager"
+              
+            />
+            <Image className="p-10"
+              src="https://lh4.googleusercontent.com/gUkK36DjYd9Ll-EoeqhjzC5PYjbIza5KgWXaIryiZxIb5TuyVcwsHGYjyAPiILK5Nfo=w2400"
+              width="800"
+              height="532"
+              alt="KCGMH"
+            
+              loading="eager"
+              
+            />
+        </div>
       </SectionTitle>
  
  

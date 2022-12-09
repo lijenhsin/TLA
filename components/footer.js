@@ -7,7 +7,7 @@ export default function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
-    <div className="relative">
+    <div className="relative ">
       <Container>
         <div className="flex flex-col justify-center border-t border-gray-200">
           <div className="text-xl text-center text-gray-700 dark:text-white">
@@ -30,10 +30,12 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-      <Container>
-        <div className=" grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-200 dark:border-trueGray-700 ">
-          <div className="">
-            <div className="text-center">Follow us 追蹤我們</div>
+      <Container className="shadow-xl m-0 border-black border-2 max-w-screen-xl bg-slate-800 text-slate-200">
+        <div className="place-content-center md:flex max-w-screen-xl  ">
+          <div className="p-4 md:shrink-0 ">
+            <h1 className="leading-8 text-center border-b-sky-600 border-b-2">
+              Follow us 追蹤我們
+            </h1>
             <div className=" flex justify-center mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
                 href="https://www.facebook.com/groups/738069780632980"
@@ -57,9 +59,23 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          <div className="p-4  ">
+            <h1 className="leading-8 text-center border-b-sky-600 border-b-2">
+              學會秘書處
+            </h1>
+            <ul className="leading-8 text-lg p-5 md:text-sm ">
+
+              <li className="font-bold">林麗芸 秘書</li>
+              <li>電話：03-3281200 #3967</li>
+              <li className="font-bold">秘書長 辛立仁醫師</li>
+              <li>e-mail: <a className="text-blue-400" href="lijen.hsin@gmail.com">lijen.hsin@gmail.com</a></li>
+              <li className="font-bold">副秘書長 盧怡安醫師</li>
+              <li className="">e-mail: <a className="text-blue-400" href="season4990@hotmail.com">season4990@hotmail.com</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
+        <div className="my-10 text-sm text-center text-gray-300 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. 台灣喉科醫學會 Taiwan
           Laryngological Association
         </div>
@@ -141,7 +157,7 @@ const Backlink = () => {
         />
       </svg>
 
-      <span>網站模板：Web3Templates ｜ Nextly</span>
+      <span>Design modified from：Web3Templates ｜ Nextly</span>
     </a>
   );
 };

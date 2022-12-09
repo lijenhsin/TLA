@@ -1,9 +1,8 @@
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 
 export default function Navbar() {
-
   const navigation = [
     { title: "關於我們", url: "about" },
     { title: "最新消息", url: "news" },
@@ -13,15 +12,15 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-full shadow-lg">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+    <div className="w-full shadow-lg bg-gray-100 dark:bg-slate-900">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0 ">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <div className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+                  <div className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-cyan-500 ">
                     <span>
                       <img
                         src="/img/logo.png"
@@ -37,10 +36,10 @@ export default function Navbar() {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                  className="px-2 py-1 ml-auto  text-gray-600 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-gray-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
                 >
                   <svg
-                    className="w-6 h-6 fill-current"
+                    className=" w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
@@ -59,23 +58,26 @@ export default function Navbar() {
                     )}
                   </svg>
                 </Disclosure.Button>
-
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
-                  <>
-                    {navigation.map((item, index) => (
-                      <Link key={index} href={"/" + item.url}>
-                        <div className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md text-sm dark:text-gray-300 hover:text-indigo-500 hover:bg-sky-200 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
-                          {item.title}
+ 
+                  <Disclosure.Panel className="pl-20 border-black border-0 flex flex-wrap w-full my-2 lg:hidden ">
+                    <>
+                      {navigation.map((item, index) => (
+                        <Link key={index} href={"/" + item.url}>
+                          <div className="flex-none border-black border-0 w-22 px-4 py-2  text-black rounded-md text-md dark:text-gray-300 hover:text-sky-100 hover:bg-gray-800 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                            {item.title}
+                          </div>
+                        </Link>
+                      ))}
+                      {/*}
+                      <Link href="/">
+                        <div className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+                          回首頁
                         </div>
                       </Link>
-                    ))}
-                    <Link href="/">
-                      <div className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
-                        回首頁
-                      </div>
-                    </Link>
-                  </>
-                </Disclosure.Panel>
+                      */}
+                    </>
+                  </Disclosure.Panel>
+               
               </div>
             </>
           )}

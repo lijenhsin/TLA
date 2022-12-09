@@ -11,6 +11,13 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import { Noto_Serif_TC } from "@next/font/google";
+
+const MingTi = Noto_Serif_TC({
+  weight: "900",
+});
+
+const h1class =`${MingTi.className} text-2xl leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-4xl xl:leading-tight dark:text-white`
 
 //import dynamic from "next/dynamic";
 
@@ -45,10 +52,7 @@ export default function Home() {
       </SectionTitle>
  
  
-     
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        歡迎與我們聯絡
-      </SectionTitle>
+  
      
       <Footer />
       <PopupWidget />

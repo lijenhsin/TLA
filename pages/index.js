@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>台灣喉科醫學會首頁：Welcome to Taiwan Laryngoloigcal Association</title>
+        <title>台灣喉科醫學會首頁：Official site of Taiwan Laryngoloigcal Association</title>
         <meta
           name="description"
           content="TLA intro page"
