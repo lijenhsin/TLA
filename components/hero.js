@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/keelung.jpg";
 import { Noto_Serif_TC } from "@next/font/google";
+import Link from "next/link";
 
 const MingTi = Noto_Serif_TC({
   weight: "900",
@@ -21,18 +22,20 @@ export default function Hero() {
             </h1>
             <div className={ `p-5 py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 `}>
               台灣喉科醫學會於2023/1/8(日)預計於基隆長庚醫院舉辦，主題為咽喉逆流的最新治療以及喉科臨床病例討論會。
-              地點：基隆長庚紀念醫院 五樓國際會議中心 204基隆市安樂區麥金路222號
+              <ul className="pt-5 text-slate-800">
+                <li>地點：基隆長庚紀念醫院 五樓國際會議中心 </li>
+                  <li>204基隆市安樂區麥金路222號</li>
+                </ul> 
             </div>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href="https://link.to.com/signup"
-                target="_blank"
-                rel="noopener"
+              <Link
+                href="currentevent"
+               
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
               >
                 報名
-              </a>
+              </Link>
             </div>
           </div>
         </div>

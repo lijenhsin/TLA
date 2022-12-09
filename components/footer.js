@@ -66,7 +66,7 @@ export default function Footer() {
             <ul className="leading-8 text-lg p-5 md:text-sm ">
 
               <li className="font-bold">林麗芸 秘書</li>
-              <li>電話：03-3281200 #3967</li>
+              <li>電話：<a href="tel:03-3281200 #3967"> 03-3281200 #3967</a></li>
               <li className="font-bold">秘書長 辛立仁醫師</li>
               <li>e-mail: <a className="text-blue-400" href="lijen.hsin@gmail.com">lijen.hsin@gmail.com</a></li>
               <li className="font-bold">副秘書長 盧怡安醫師</li>

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
+import Link from "next/link";
 
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
