@@ -39,7 +39,7 @@ export default function Home() {
 
       <SectionTitle pretitle="2023TLA Winter Conference" title="線上報名表單" className="">
         <div className="content-center">
-          <iframe className="w-96 lg:w-[800px]"
+          <iframe className="w-80 md:w-96 lg:w-[800px]"
             src="https://docs.google.com/forms/d/e/1FAIpQLSfxP4ZV1FO-7PC8lNXcAdmyxyDd8eXAEfDVoFTnfC_-17qFLg/viewform?embedded=true"
             
             height="1000"
