@@ -28,27 +28,32 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>台灣喉科醫學會首頁：Official site of Taiwan Laryngoloigcal Association</title>
-        <meta
-          name="description"
-          content="TLA intro page"
-        />
+        <title>
+          台灣喉科醫學會首頁：Official site of Taiwan Laryngoloigcal Association
+        </title>
+        <meta name="description" content="TLA intro page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
-      
-      <SectionTitle
-        pretitle="2023TLA Winter Conference"
-        title="線上報名表單">
-         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxP4ZV1FO-7PC8lNXcAdmyxyDd8eXAEfDVoFTnfC_-17qFLg/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+
+      <SectionTitle pretitle="2023TLA Winter Conference" title="線上報名表單" className="">
+        <div className="content-center">
+          <iframe className="w-96 lg:w-[800px]"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfxP4ZV1FO-7PC8lNXcAdmyxyDd8eXAEfDVoFTnfC_-17qFLg/viewform?embedded=true"
+            
+            height="1000"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            載入中…
+          </iframe>
+        </div>
       </SectionTitle>
- 
- 
-     
-     
+
       <Footer />
-      <PopupWidget />
+      
     </>
   );
 }

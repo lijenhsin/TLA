@@ -41,14 +41,13 @@ export default function Home() {
       <SectionTitle
         pretitle="Recent Activity"
         title="喉科專家列表">
-        分區列表
+        <h1 className="text-lg">分區列表</h1>
+       <div className="m-10 font-bold text-slate-800">建構中...</div> 
       </SectionTitle>
  
  
      
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        歡迎與我們聯絡
-      </SectionTitle>
+ 
      
       <Footer />
       <PopupWidget />

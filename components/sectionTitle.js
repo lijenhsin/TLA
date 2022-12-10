@@ -20,7 +20,7 @@ export default function SectionTitle(props) {
       )}
 
       {props.children && (
-        <div className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+        <div className="border-0 border-black max-w-prose py-4 text-lg leading-normal  text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
           {props.children}
         </div>
       )}

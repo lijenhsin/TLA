@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full shadow-lg bg-gray-100 dark:bg-slate-900">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0 ">
+      <nav className=" border-0 border-black container relative flex flex-wrap items-center  p-8 mx-auto  xl:px-0 xl:place-content-evenly">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
@@ -58,38 +58,37 @@ export default function Navbar() {
                     )}
                   </svg>
                 </Disclosure.Button>
- 
-                  <Disclosure.Panel className="pl-20 border-black border-0 flex flex-wrap w-full my-2 lg:hidden ">
-                    <>
-                      {navigation.map((item, index) => (
-                        <Link key={index} href={"/" + item.url}>
-                          <div className="flex-none border-black border-0 w-22 px-4 py-2  text-black rounded-md text-md dark:text-gray-300 hover:text-sky-100 hover:bg-gray-800 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
-                            {item.title}
-                          </div>
-                        </Link>
-                      ))}
-                      {/*}
+
+                <Disclosure.Panel className="pl-20 border-black border-0 flex flex-wrap w-full my-2 lg:hidden ">
+                  <>
+                    {navigation.map((item, index) => (
+                      <Link key={index} href={"/" + item.url}>
+                        <div className="flex-none border-black border-0 w-22 px-4 py-2  text-black rounded-md text-md dark:text-gray-300 hover:text-sky-100 hover:bg-gray-800 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                          {item.title}
+                        </div>
+                      </Link>
+                    ))}
+                    {/*}
                       <Link href="/">
                         <div className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
                           回首頁
                         </div>
                       </Link>
                       */}
-                    </>
-                  </Disclosure.Panel>
-               
+                  </>
+                </Disclosure.Panel>
               </div>
             </>
           )}
         </Disclosure>
 
         {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
+        <div className="flex-initial border-black border-0 hidden text-center lg:flex lg:items-center">
+          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex ">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link href={"/" + menu.url}>
-                  <div className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline  dark:text-gray-200 hover:text-sky-800 hover:bg-sky-200 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+                  <div className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline  dark:text-gray-200 hover:text-sky-800 hover:bg-sky-200 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800 xl:text-xl">
                     {menu.title}
                   </div>
                 </Link>
@@ -97,9 +96,9 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-
+         
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/">
+          <Link href="#">
             <div className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
               會員登入
             </div>
@@ -107,6 +106,7 @@ export default function Navbar() {
 
           <ThemeChanger />
         </div>
+            
       </nav>
     </div>
   );

@@ -77,7 +77,7 @@ export default function Home() {
       </SectionTitle>
      
       <Footer />
-      <PopupWidget />
+       
     </>
   );
 }
