@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>台灣喉科醫學會首頁：Welcome to Taiwan Laryngoloigcal Association</title>
+        <title>台灣喉科醫學：衛教資訊</title>
         <meta
           name="description"
           content="TLA intro page"
@@ -46,9 +46,9 @@ export default function Home() {
       <Navbar />
      
       <SectionTitle
-        pretitle="Recent Activity"
-        title="聯絡我們">
-        北區喉科討論會
+        pretitle="Patient Information"
+        title="最新衛教訊息">
+        <div className="m-10 font-bold text-slate-800">建構中...</div> 
       </SectionTitle>
  
  

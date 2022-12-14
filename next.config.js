@@ -11,6 +11,10 @@ module.exports = {
     return config;
   },
   images: {
-    domains: ['lh6.googleusercontent.com','lh4.googleusercontent.com'],
+    domains: [
+      "lh6.googleusercontent.com",
+      "lh4.googleusercontent.com",
+      "lh3.googleusercontent.com",
+    ],
   },
 };

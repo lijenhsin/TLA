@@ -39,17 +39,17 @@ export default function Home() {
         title="近期活動">
         <h1 className={h1class}>成大醫院喉科新進展</h1>
         <div>
-        <Image className="p-10"
+        <Image className="p-5 shadow-lg m-5"
               src="https://lh6.googleusercontent.com/uacgAwUATy6FOVcHSBBNGDVUM7-1BWOJFu0w7F9tzxdthj4XIe4daC1uex8Rpo5Px0A=w2400"
               width="800"
               height="532"
               alt="KCGMH"
             
               loading="eager"
-              
+               
             />
 
-<Image className="p-10"
+<Image className="p-5 shadow-lg m-5"
               src="https://lh6.googleusercontent.com/W_tVk0igWu1WIjnA9SXbM35mYte5ttVUX4N-tu_pd-1jTJ-K_x6DNGl9zuYa_Z6PZgY=w2400"
               width="800"
               height="532"
@@ -58,7 +58,7 @@ export default function Home() {
               loading="eager"
               
             />
-            <Image className="p-10"
+            <Image className="p-5 shadow-lg m-5"
               src="https://lh4.googleusercontent.com/gUkK36DjYd9Ll-EoeqhjzC5PYjbIza5KgWXaIryiZxIb5TuyVcwsHGYjyAPiILK5Nfo=w2400"
               width="800"
               height="532"
