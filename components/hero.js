@@ -21,9 +21,10 @@ export default function Hero() {
             <div
               className={`p-5 py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 `}
             >
-              台灣喉科醫學會於2023/1/8(日)預計於基隆長庚醫院舉辦，主題為咽喉逆流的最新治療以及喉科臨床病例討論會。
+              台灣喉科醫學會於2023/1/8(日)預計於基隆長庚醫院舉辦2023冬季喉科學術研討會，主題為咽喉逆流的最新治療以及喉科臨床病例討論會。
               <ul className="pt-5 dark:text-sky-200 text-slate-800 text-sm sm:text-md lg:text-lg">
-                <li>地點：基隆長庚紀念醫院 五樓國際會議中心 </li>
+                <li>主辦：台灣喉科醫學會</li>
+                <li>主辦：基隆長庚醫院耳鼻喉科</li><li>地點：基隆長庚紀念醫院 五樓國際會議中心 </li>
                 <li>地址：基隆市安樂區麥金路222號</li>
               </ul>
               <iframe
