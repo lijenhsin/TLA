@@ -23,7 +23,7 @@ export default function Hero() {
             <div
               className={`p-5 py-5 text-md leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 `}
             >
-              <p className="p-5 bg-gray-100">
+              <p className="p-5 bg-gray-100 dark:bg-gray-900">
                 台灣喉科醫學會春季演講會精彩開講！本次演講主題為喉部經口手術研討，以及特殊病例的研討。內容精彩，歡迎您的加入！。
               </p>
               <ul className="pl-5 lg:pl-10 list-disc pt-5 dark:text-sky-200 text-slate-800 text-sm sm:text-md lg:text-lg">
@@ -61,7 +61,7 @@ export default function Hero() {
             </div>
             <div>
               <table className="mt-10">
-                <thead className="bg-blue-300">
+                <thead className="bg-blue-300 dark:bg-blue-700">
                   <tr>
                     <th>Time</th>
                     <th>Topic</th>
@@ -69,7 +69,7 @@ export default function Hero() {
                     <th>Moderator</th>
                   </tr>
                 </thead>
-                <tbody className="bg-sky-100">
+                <tbody className="bg-sky-100 dark:bg-sky-900">
                   <tr>
                     <td>08:30 – 08:40</td>
                     <td colspan="3">Registration 報到</td>

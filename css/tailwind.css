@@ -19,5 +19,5 @@ td {
 
 }
 tr{
-  @apply even:bg-gray-200;
+  @apply even:bg-gray-200 dark:even:bg-gray-700;
 }
