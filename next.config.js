@@ -15,6 +15,9 @@ module.exports = {
       "lh6.googleusercontent.com",
       "lh4.googleusercontent.com",
       "lh3.googleusercontent.com",
+      "scontent.ftpe13-1.fna.fbcdn.net",
+      "scontent.ftpe13-2.fna.fbcdn.net",
     ],
+ 
   },
 };

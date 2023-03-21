@@ -23,7 +23,7 @@ export default function Navbar() {
                   <div className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-cyan-500 ">
                     <span>
                       <img
-                        src="/img/logo.png"
+                        src="/img/tla.png"
                         alt="N"
                         width="32"
                         height="32"

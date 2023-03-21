@@ -32,15 +32,15 @@ export default function Home() {
           台灣喉科醫學會首頁：Official site of Taiwan Laryngoloigcal Association
         </title>
         <meta name="description" content="TLA intro page" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fav.ico" />
       </Head>
 
       <Navbar />
 
-      <SectionTitle pretitle="2023TLA Winter Conference" title="線上報名表單" className="">
+      <SectionTitle pretitle="2023TLA Spring Conference" title="線上報名表單" className="">
         <div className="content-center">
           <iframe className="w-80 md:w-96 lg:w-[800px]"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfxP4ZV1FO-7PC8lNXcAdmyxyDd8eXAEfDVoFTnfC_-17qFLg/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc_GXNs2fgj1W5x5KG-Xd1DzzXFNDhDGx1Qf3nA7Gxdoit6CA/viewform?embedded=true"
             
             height="1000"
             frameborder="0"

@@ -35,7 +35,7 @@ export default function Home() {
           name="description"
           content="TLA intro page"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fav.ico" />
       </Head>
 
       <Navbar />
