@@ -17,7 +17,7 @@ const MingTi = Noto_Serif_TC({
   weight: "400",
 });
 
-const h1class = `${MingTi.className} text-left tracking-wide text-xl leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white text-xs sm:text-sm md:text-xl`;
+const h1class = `${MingTi.className} text-left tracking-wide text-xl leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white text-sm md:text-xl`;
 
 export default function Home() {
   return (
