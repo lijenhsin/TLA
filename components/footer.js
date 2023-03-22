@@ -16,9 +16,9 @@ export default function Footer() {
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
             <div className="p-3 shadow-lg text-gray-400 dark:text-gray-400">
-              <a href="">
+              <Link href="healthinfo">
                 <Image src="/img/alg_sponcer.png" height={100} width={200} className="rounded-full h-20 w-20 lg:h-32 lg:w-32"></Image>
-              </a>
+              </Link>
             </div>
             {/*
             <div className="p-3 shadow-lg text-gray-400 dark:text-gray-400">
@@ -126,7 +126,7 @@ const Backlink = () => {
         />
       </svg>
 
-      <span>Design modified from：Web3Templates ｜ Nextly</span>
+       
     </a>
   );
 };

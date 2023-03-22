@@ -16,17 +16,17 @@ th {
 }
 
 td {
-  @apply p-3 text-xs;
+  @apply p-3 text-xs lg:text-sm;
   font-family:  "標楷體", BiauKai, DFKai-SB, "华文楷体", stkaiti, "楷體", KaiTi, "楷体", SimKai;
 
 }
 td:nth-child(1){
-  @apply text-xs;
+  @apply text-xs lg:w-28;
 }
 tr{
   @apply dark:bg-gray-700;
 }
 
-tr:nth-child(2), :nth-child(7),:nth-child(9)  td{
+tr:nth-child(2), tr:nth-child(7),tr:nth-child(9)  td{
   @apply border-b-2 border-t-2 border-black bg-sky-100 h-4 p-3;
 }
