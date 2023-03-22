@@ -11,13 +11,22 @@
 }
 
 th {
-  @apply p-2 border-black bottom-1 text-sm;
+  @apply p-0 border-black bottom-1 text-sm;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 td {
-  @apply p-3 text-xs md:text-sm;
+  @apply p-3 text-xs;
+  font-family:  "標楷體", BiauKai, DFKai-SB, "华文楷体", stkaiti, "楷體", KaiTi, "楷体", SimKai;
 
 }
+td:nth-child(1){
+  @apply text-xs;
+}
 tr{
-  @apply even:bg-gray-200 dark:even:bg-gray-700;
+  @apply dark:bg-gray-700;
+}
+
+tr:nth-child(2), :nth-child(7),:nth-child(9)  td{
+  @apply border-b-2 border-t-2 border-black bg-sky-100 h-4 p-3;
 }
